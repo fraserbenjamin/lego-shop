@@ -14,6 +14,7 @@ export default {
         "brand-dark": "#172b4d",
         "brand-light": "#f8f8f8",
         "brand-gray": "#42526e",
+        "brand-orange": "#fd8024",
       },
       fontFamily: {
         "cera-pro": ["Cera Pro", "Inter", "sans-serif"],
