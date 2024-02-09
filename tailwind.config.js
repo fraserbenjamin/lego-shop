@@ -9,7 +9,7 @@ export default {
         "brand-red": "#ff5630",
         "brand-green": "#36b37e",
         "brand-yellow": "#ffcf00",
-        "brand-purple": "#6554c0",
+        "brand-purple": "#201d48",
         "brand-teal": "#00b8d9",
         "brand-dark": "#172b4d",
         "brand-light": "#f8f8f8",
