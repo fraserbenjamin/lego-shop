@@ -1,14 +1,19 @@
+import legoSVG from "../assets/lego.svg";
+
 const linkRowStyles = `text-sm cursor-pointer hover:underline`;
 
 const Footer = () => {
   return (
     <footer className="bg-brand-purple text-white w-full px-12 flex flex-col">
-      <p>Footer</p>
+
+      <div>
+        <img src={legoSVG} alt="LEGO" className="h-24" />
+      </div>
 
       <div className="my-8">
         <div className="flex">
           <div className="flex flex-col">
-            <h1 className="uppercase font-medium text-lg">
+            <h1 className="uppercase font-medium mb-5">
               SUBSCRIBE TO DIGITAL MARKETING EMAILS
             </h1>
 
@@ -16,7 +21,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Your email address"
-                className="border border-white px-3 py-3 font-regular text-sm"
+                className="border border-white px-3 py-3 font-regular text-sm text-neutral-900"
               />
               <button className="bg-brand-orange rounded-r px-3">
                 <svg
@@ -46,7 +51,7 @@ const Footer = () => {
         <li className={linkRowStyles}>Cookie Settings</li>
       </ul>
 
-      <p className="text-sm my-8">
+      <p className="text-xs my-8">
         LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to
         purchase online. LEGO, the LEGO logo, the Minifigure, DUPLO, the FRIENDS
         logo, the MINIFIGURES logo, DREAMZzz, NINJAGO, VIDIYO and MINDSTORMS are

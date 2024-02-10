@@ -17,7 +17,7 @@ const ProductCard: FC<ProductCardProps> = ({
   tag,
 }) => {
   return (
-    <div className="p-3 min-w-72 max-w-72">
+    <div className="py-3 px-5 min-w-72 max-w-72">
       <div className="p-2 border border-gray mb-3 flex flex-col h-72 justify-center place-items-center relative">
         <img src={image} alt={name} />
 
@@ -34,8 +34,9 @@ const ProductCard: FC<ProductCardProps> = ({
       <h1 className="font-medium h-14">{name}</h1>
 
       <div className="flex my-1">
-        {Array.from(Array(rating).keys()).map(() => (
+        {Array.from(Array(rating).keys()).map((key: number) => (
           <svg
+            key={key}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 49"
             className="w-4 h-4"
@@ -49,7 +50,7 @@ const ProductCard: FC<ProductCardProps> = ({
       </div>
 
       <p className="text-lg font-bold">£{price}</p>
-      <button className="bg-brand-orange rounded px-12 py-3 font-medium w-full">
+      <button className="bg-brand-orange rounded px-12 py-3 font-medium w-full mt-2">
         Add to Bag
       </button>
     </div>

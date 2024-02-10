@@ -38,12 +38,13 @@ const featuredSets: Set[] = [
 
 const FeaturedSets = () => {
   return (
-    <div>
-      <h1 className="text-2xl p-3">Featured Sets</h1>
+    <div className="px-24 my-8">
+      <h1 className="text-2xl py-3">Featured Sets</h1>
 
-      <div className="flex w-full overflow-x-auto justify-center">
+      <div className="flex w-full overflow-x-auto">
         {featuredSets.map((set) => (
           <ProductCard
+            key={set.name}
             name={set.name}
             price={set.price}
             rating={set.rating}
