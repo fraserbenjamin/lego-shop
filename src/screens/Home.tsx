@@ -1,5 +1,4 @@
 import FeaturedSets from "../components/FeaturedSets";
-import Footer from "../components/Footer";
 import TelephoneBoxHero from "../components/TelephoneBoxHero";
 
 const Home = () => {
@@ -8,8 +7,6 @@ const Home = () => {
       <TelephoneBoxHero />
 
       <FeaturedSets />
-
-      <Footer />
     </div>
   );
 };

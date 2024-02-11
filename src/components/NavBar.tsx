@@ -1,11 +1,17 @@
 
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
+import legoSVG from '../assets/lego.svg';
 
-const NavBar = () => {
+interface NavBarProps {
+  sticky?: boolean;
+}
+
+const NavBar: FC<NavBarProps> = ({ sticky }) => {
   return (
-    <nav className='bg-brand-yellow uppercase font-medium text-md flex px-8'>
+    <nav className={`bg-brand-yellow uppercase font-medium text-md flex px-8 ${sticky ? "sticky top-0 z-10" : null}`}>
       <img
-        src="https://assets.lego.com/logos/v4.5.0/brand-lego.svg"
+        src={legoSVG}
         alt="LEGO"
         className='w-14 h-14 object-contain my-2'
         loading="eager"
@@ -17,7 +23,7 @@ const NavBar = () => {
           <Link to="/" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Shop</Link>
         </li>
         <li className='px-6 py-6'>
-          <Link to="/about" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Discover</Link>
+          <Link to="/sets" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Discover</Link>
         </li>
         <li className='px-6 py-6'>
           <Link to="/contact" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Help</Link>

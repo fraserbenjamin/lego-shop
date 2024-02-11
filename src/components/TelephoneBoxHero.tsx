@@ -11,7 +11,7 @@ const TelephoneBoxHero = () => {
         <button>Shop Now</button>
       </div>
 
-      <video className="h-full w-full object-cover" loop playsInline autoPlay muted>
+      <video className="h-full w-full object-cover" loop playsInline autoPlay muted disableRemotePlayback>
         <source src={telephoneBoxMotionHero} type="video/mp4" />
       </video>
     </div >
