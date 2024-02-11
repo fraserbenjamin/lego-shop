@@ -43,7 +43,7 @@ const Sets = () => {
       <div className='flex justify-center mt-5 mb-12'>
         <button
           onClick={loadMore}
-          className="bg-brand-orange px-5 py-3 mt-5 rounded-full font-medium"
+          className="bg-link-blue text-white px-5 py-3 mt-5 rounded-full font-medium"
         >
           Load More
         </button>
