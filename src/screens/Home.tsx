@@ -3,11 +3,11 @@ import TelephoneBoxHero from "../components/TelephoneBoxHero";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <TelephoneBoxHero />
 
       <FeaturedSets />
-    </div>
+    </>
   );
 };
 
