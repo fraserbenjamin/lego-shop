@@ -25,7 +25,7 @@ const Sets = () => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-t border-l'>
         {(setsList as SetResponse[]).sort((a, b) => b.year - a.year).slice(0, visible).map((set) => (
-          <div className="border-b border-r flex flex-col justify-between place-items-start">
+          <div key={set.set_num} className="border-b border-r flex flex-col justify-between place-items-start">
             <div className="p-3 mb-3 flex flex-col justify-center place-items-center relative h-48">
               <img className="object-contain h-full w-full" src={set.img_url} alt={set.name} />
             </div>

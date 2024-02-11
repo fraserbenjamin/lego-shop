@@ -19,7 +19,7 @@ const ProductCard: FC<ProductCardProps> = ({
   return (
     <div className="py-3 px-5 min-w-72 max-w-72">
       <div className="p-2 border border-gray mb-3 flex flex-col h-72 justify-center place-items-center relative">
-        <img src={image} alt={name} />
+        <img className="object-contain h-full w-full" src={image} alt={name} />
 
         <div className="absolute bottom-2 left-2">
           {tag ? (

@@ -57,11 +57,7 @@ const Footer = () => {
       </ul>
 
       <p className="text-xs mt-8">
-        LEGO System A/S, DK-7190 Billund, Denmark. Must be 18 years or older to
-        purchase online. LEGO, the LEGO logo, the Minifigure, DUPLO, the FRIENDS
-        logo, the MINIFIGURES logo, DREAMZzz, NINJAGO, VIDIYO and MINDSTORMS are
-        trademarks of the LEGO Group. ©2024 The LEGO Group. All rights
-        reserved. Use of this site signifies your agreement to the Terms of Use.
+        This is a demonstration website and is not affiliated with the LEGO Group. It is used for educational purposes only. LEGO, the LEGO logo, the Minifigure, DUPLO, the FRIENDS logo, the MINIFIGURES logo, DREAMZzz, NINJAGO, VIDIYO and MINDSTORMS are trademarks of the LEGO Group. ©2024 The LEGO Group. All rights reserved. Use of this site signifies your agreement to the Terms of Use.
       </p>
     </footer>
   );

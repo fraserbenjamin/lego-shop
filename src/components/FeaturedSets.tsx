@@ -34,6 +34,13 @@ const featuredSets: Set[] = [
       "https://www.lego.com/cdn/cs/set/assets/blt08ba1f2bb5e8f2fb/10326.png",
     tag: "exclusive",
   },
+  {
+    name: "Eiffel tower",
+    price: 554.99,
+    rating: 4,
+    image: "https://www.lego.com/cdn/cs/set/assets/blt0e2b04c977a2dc2a/10307.png",
+    tag: "exclusive",
+  }
 ];
 
 const FeaturedSets = () => {
