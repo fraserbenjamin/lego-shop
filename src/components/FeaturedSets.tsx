@@ -40,7 +40,13 @@ const featuredSets: Set[] = [
     rating: 4,
     image: "https://www.lego.com/cdn/cs/set/assets/blt0e2b04c977a2dc2a/10307.png",
     tag: "exclusive",
-  }
+  },
+  {
+    name: "Talking Sorting Hat™",
+    price: 89.99,
+    image: "https://www.lego.com/cdn/cs/set/assets/blt47c94c595257dd3a/76429.png",
+    tag: "new",
+  },
 ];
 
 const FeaturedSets = () => {
