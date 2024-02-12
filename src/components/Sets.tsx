@@ -3,6 +3,8 @@ import setsList from '../assets/sets.json';
 import { SetResponse } from "../types";
 import bagSVG from "../assets/bag.svg";
 
+console.log(`Found ${(setsList as SetResponse[]).length} sets`);
+
 const Sets = () => {
   const [visible, setVisible] = useState(12);
 
@@ -17,9 +19,9 @@ const Sets = () => {
         <p>
           Calling all LEGO® fans! If you love having the latest sets to build, save this page. You can find every new LEGO set we've released in the last 2 months here. From building toys to complex collectables, there’s a wide range to discover. Browse a vast LEGO assortment and filter by <a href="/en-gb/categories/age">age</a>, <a href="/en-gb/categories/price">price</a>, <a href="/en-gb/categories/interests">interest</a> and more.
 
-          You can also find
-          <a className='text-link-blue hover:underline' href="/en-gb/categories/coming-soon">sets that are coming soon</a>,&nbsp;
-          <a className='text-link-blue hover:underline' href="/en-gb/categories/exclusives">LEGO Exclusives</a> and the most&nbsp;
+          You can also find{' '}
+          <a className='text-link-blue hover:underline' href="/en-gb/categories/coming-soon">sets that are coming soon</a>,{' '}
+          <a className='text-link-blue hover:underline' href="/en-gb/categories/exclusives">LEGO Exclusives</a> and the most{' '}
           <a className='text-link-blue hover:underline' href="/en-gb/bestsellers">popular LEGO sets here</a>!
         </p>
       </div>
@@ -45,7 +47,7 @@ const Sets = () => {
           onClick={loadMore}
           className="bg-link-blue text-white px-5 py-3 mt-5 rounded-full font-medium"
         >
-          Load More
+          Find More
         </button>
       </div>
     </div>
