@@ -1,6 +1,6 @@
 import legoSVG from "../assets/lego.svg";
 
-const linkRowStyles = `text-sm cursor-pointer hover:underline`;
+const linkRowStyles = `text-sm cursor-pointer hover:underline p-3`;
 
 const Footer = () => {
   return (
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <ul className="flex space-x-5">
+      <ul className="flex flex-wrap justify-start place-items-center">
         <li className={linkRowStyles}>Privacy Policy</li>
         <li className={linkRowStyles}>Cookies</li>
         <li className={linkRowStyles}>Legal notice</li>
