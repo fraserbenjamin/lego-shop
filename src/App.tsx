@@ -2,10 +2,10 @@
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import PromoBar from './components/PromoBar';
-import Home from './screens/Home';
-import Products from './screens/Products';
+import Home from './pages/Home';
+import Products from './pages/Products';
 import Footer from './components/Footer';
-import Contact from './screens/Contact';
+import Contact from './pages/Contact';
 
 function App() {
   return (
