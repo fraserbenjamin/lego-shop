@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project takes you through the basic concepts of components and how to use it to them to build applications. We will also learn about React and use it to create a website loosley based on the LEGO® Shop.
+This project takes you through the basic concepts of components and how to use them to build applications. You will also learn about React and use it to create a website loosley based on the LEGO® Shop.
 
 ## Setup
 
