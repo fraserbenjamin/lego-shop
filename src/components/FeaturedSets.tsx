@@ -51,7 +51,7 @@ const featuredSets: Set[] = [
 
 const FeaturedSets = () => {
   return (
-    <div className="px-24 my-8">
+    <div className="px-16 my-8">
       <h1 className="text-2xl py-3">Featured Sets</h1>
 
       <div className="flex w-full overflow-x-auto">
