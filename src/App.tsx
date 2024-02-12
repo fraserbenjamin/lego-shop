@@ -5,6 +5,7 @@ import PromoBar from './components/PromoBar';
 import Home from './screens/Home';
 import Products from './screens/Products';
 import Footer from './components/Footer';
+import Contact from './screens/Contact';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sets" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer />
