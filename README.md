@@ -6,7 +6,7 @@ This project takes you through the basic concepts of components and how to use t
 
 ## Setup
 
-To help get started quickly, we recommend using [StackBlitz](https://stackblitz.com), an online code editor that allows you to start coding right away. You can find the project [here](https://stackblitz.com/~/github.com/fraserbenjamin/lego-shop). It provides a simple way to start coding without having to install anything on your computer. Just click the link and you can start coding right away!
+To help get started quickly, we recommend using [StackBlitz](https://stackblitz.com), an online code editor that allows you to start developing right away. You can find the project [here](https://stackblitz.com/~/github.com/fraserbenjamin/lego-shop). It provides a solid text editor without having to install anything on your computer. Just click the link and you can start building right away!
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/fraserbenjamin/lego-shop)
 
