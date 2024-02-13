@@ -44,6 +44,8 @@ Inside the `src` folder, you will find the following items:
 
 To help you get going quickly we've added some other tools to the project, you don't need to worry about these too much at the moment, but they are there to help you as you progress through the project. You're welcome to explore them if you're interested.
 
+- `react`: This is a JavaScript library that allows you to build user interfaces. It is a popular tool that is used to build component based websites. Learn more about React [here](https://reactjs.org/).
+
 - `react-router-dom`: This is a tool that allows you to create a multi-page website. It allows you to create links between pages and manage the state of the website. Learn more about React Router [here](https://reactrouter.com/).
 
 - `tailwindcss`: This is a tool that allows you to create custom styles for your website. It is a utility-first framework that allows you to quickly style your website without having to write a lot of CSS. Learn more about Tailwind CSS [here](https://tailwindcss.com/).
