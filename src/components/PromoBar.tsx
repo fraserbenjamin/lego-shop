@@ -1,7 +1,121 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocalStorage } from "react-use";
+
+const messages = [
+  {
+    text: "Get a My First Duck gift with online purchase*",
+    action: "#",
+  },
+  {
+    text: "FREE delivery on orders above £50!*",
+    action: "#",
+  },
+  {
+    text: "Play Zone",
+    action: "https://kids.lego.com",
+  },
+  {
+    text: "LEGO® VIP",
+    action: "#",
+  },
+  {
+    text: "Find a LEGO® Store",
+    action: "#",
+  },
+  {
+    text: "Gift Cards",
+    action: "#",
+  },
+  {
+    text: "Sign up for emails",
+    action: "#",
+  },
+  {
+    text: "LEGO® Catalogue",
+    action: "#",
+  },
+  {
+    text: "LEGO® Certified Stores",
+    action: "#",
+  },
+  {
+    text: "LEGO® Education",
+    action: "#",
+  },
+  {
+    text: "LEGO® Life",
+    action: "#",
+  },
+  {
+    text: "LEGO® Foundation",
+    action: "#",
+  },
+  {
+    text: "LEGO® House",
+    action: "#",
+  },
+  {
+    text: "LEGO® Ideas",
+    action: "#",
+  },
+  {
+    text: "LEGO® News",
+    action: "#",
+  },
+  {
+    text: "LEGO® Rebrick",
+    action: "#",
+  },
+  {
+    text: "LEGO® Video Games",
+    action: "#",
+  },
+  {
+    text: "LEGO® Web Games",
+    action: "#",
+  },
+  {
+    text: "LEGO® TV",
+    action: "#",
+  },
+  {
+    text: "LEGO® YouTube",
+    action: "#",
+  },
+  {
+    text: "LEGO® Apps",
+    action: "#",
+  }
+]
 
 
 const PromoBar = () => {
+  const [persistedCurrentMessageIndex, setPersistedCurrentMessageIndex] = useLocalStorage('currentMessageIndex', 0);
+  // Using useState rather than useLocalStorageDirectly to better handle updating the value
+  const [currentMessageIndex, setCurrentMessageIndex] = useState<number>(persistedCurrentMessageIndex || 0);
+
+  const nextMessage = () => {
+    setCurrentMessageIndex((prev) => ((prev ? prev + 1 : 1) % messages.length));
+  }
+
+  const previousMessage = () => {
+    setCurrentMessageIndex((prev) => (prev ? prev - 1 : messages.length - 1) % messages.length);
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentMessageIndex((prev) => ((prev ? prev + 1 : 1) % messages.length));
+    }, 5000);
+
+    return () => clearInterval(interval);
+    // Add currentMessageIndex to the dependency array to reset the timer when the index changes
+  }, [setCurrentMessageIndex, currentMessageIndex]);
+
+  useEffect(() => {
+    setPersistedCurrentMessageIndex(currentMessageIndex);
+  }, [currentMessageIndex, setPersistedCurrentMessageIndex]);
+
   return (
     <div className='bg-theme-light flex font-regular text-sm place-items-center py-3 justify-between px-8 bg-brand-light'>
       <Link to="https://kids.lego.com" className='flex uppercase bg-brand-blue-light font-medium px-3 py-1 rounded shadow text-xs text-neutral-800 space-x-3 place-items-center'>
@@ -10,13 +124,17 @@ const PromoBar = () => {
       </Link>
 
       <div className='hidden md:flex'>
-        <svg className='rotate-180 h-5' viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" data-di-res-id="b6cb7051-54943e79" data-di-rand="1707045047069"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-        <div className='flex space-x-3 px-12'>
-          <p>FREE delivery on orders above £50!*</p>
-          <button className='text-blue-700 hover:underline'>Learn more</button>
+        <button onClick={previousMessage}>
+          <svg className='rotate-180 h-5' viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" data-di-res-id="b6cb7051-54943e79" data-di-rand="1707045047069"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+        </button>
+        <div className='flex space-x-2 px-8 min-w-[28rem] justify-center'>
+          <p>{messages[currentMessageIndex].text}</p>
+          <Link to={messages[currentMessageIndex].action} className='text-blue-700 hover:underline'>Learn more</Link>
         </div>
 
-        <svg className='h-5' viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" data-di-res-id="f6a3166b-ada89f50" data-di-rand="1707045047070"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+        <button onClick={nextMessage}>
+          <svg className='h-5' viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" data-di-res-id="f6a3166b-ada89f50" data-di-rand="1707045047070"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+        </button>
       </div>
 
       <div className='space-x-3 flex'>

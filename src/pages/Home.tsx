@@ -4,12 +4,12 @@ import GiftWithPurchase from "../components/GiftWithPurchase";
 import ReadAllAboutIt from "../components/ReadAllAboutIt";
 import TopPicks from "../components/TopPicks";
 import WelcomeMessage from "../components/WelcomeMessage";
-import TelephoneBoxHero from "../components/TelephoneBoxHero";
+import IconsBirdHero from "../components/IconsBirdHero";
 
 const Home = () => {
   return (
     <>
-      <TelephoneBoxHero />
+      <IconsBirdHero />
 
       <FeaturedSets />
 
