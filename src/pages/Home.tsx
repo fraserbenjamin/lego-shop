@@ -5,23 +5,26 @@ import ReadAllAboutIt from "../components/ReadAllAboutIt";
 import TopPicks from "../components/TopPicks";
 import WelcomeMessage from "../components/WelcomeMessage";
 import IconsBirdHero from "../components/IconsBirdHero";
+import DuneHero from "../components/DuneHero";
 
 const Home = () => {
   return (
     <>
-      <IconsBirdHero />
+      <DuneHero />
 
       <FeaturedSets />
-
-      <GiftWithPurchase />
 
       <TopPicks />
 
       <WelcomeMessage />
 
+      <GiftWithPurchase />
+
       <ReadAllAboutIt />
 
       <CallToAction />
+
+      <IconsBirdHero />
     </>
   );
 };

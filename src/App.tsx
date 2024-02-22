@@ -12,6 +12,7 @@ function App() {
     <>
       <PromoBar />
       <NavBar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sets" element={<Products />} />
