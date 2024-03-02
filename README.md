@@ -1,10 +1,17 @@
 # Learn Components with React & LEGO®
 
-![Demo Site](docs/assets/demo-site.png)
-
 ## Introduction
 
 This project takes you through the basic concepts of components and how to use them to build applications. You will also learn about React and use it to create a website loosley based on the LEGO® Shop.
+
+Through this tutorial you will
+
+- Add components to an existing template webpage
+- Create new pages in a website
+- Add navigation using a NavBar
+- Develop custom components
+
+![Demo Site](docs/assets/demo-site.png)
 
 ## Setup
 
@@ -42,9 +49,9 @@ Inside the `src` folder, you will find the following items:
 
 ## Getting Started
 
-In the [Components](docs/Components.md) page, you can see a list of prebuilt items you can use to quickly build your site as well as how to add them. You can start by adding them in the provided `src/pages/Home.tsx` file. You can remove the <Placeholder /> component first, which will give you a blank page to get going.
+In the [Components](docs/Components.md) page, you can see a list of prebuilt items you can use to quickly build your site as well as how to add them. You can start by adding them in the provided `src/pages/Home.tsx` file.
 
-For components used across all pages like `NavBar` and `Footer` consider adding them in the `src/App.tsx` file which allows them to be re-used. You may need a different import URL though if you do this.
+Some components are used across all pages like the `NavBar` and `Footer` consider adding them in the `src/App.tsx` file which allows them to be re-used. You may need a different import URL though if you do this.
 
 In paths note the following:
 
@@ -53,7 +60,39 @@ In paths note the following:
 - `../..` Up 2 directories
 - `src/File.tsx` Path to a file from the position of the file its included in. For example this will point to a different location if its in the top-level folder rather than the `src/pages` folder.
 
+### Starting the Homepage
+
+- Start by opening the `src/pages/Home.tsx` file, this includes a basic placeholder component. Remove the `<Placeholder />` first, which will give you a blank page to get going in your preview screen.
+
+- Add an import for a component, this goes at the top of the file and allows you to use the component later on in the file. For this example we're going to use the `TelephoneBoxHero`. At the top of the `Home.tsx` file `import TelephoneBoxHero from "../components/TelephoneBoxHero";`
+
+- In the tags (`<>`) of the same file, include the component e.g. `<TelephoneBoxHero />`
+
+- Save the file and your output should now show the element and your code should look like below.
+
+```
+import TelephoneBoxHero from "../components/TelephoneBoxHero";
+
+const Home = () => {
+  return (
+    <>
+      <TelephoneBoxHero />
+    </>
+  );
+};
+
+export default Home;
+```
+
+### Expanding the Homepage
+
+Open the link below to see a full list of all the components you can add. Like you've done previously, copy/paste the component tags and imports like you've done in the previous step to start building out your own website. Once you've fleshed out the page similar to [lego.com](lego.com), move onto the next step.
+
+[Components List](docs/Components.md)
+
 ### Adding Pages
+
+You can add any page you'd like, however for this example we're going to create a contact page.
 
 - To add a page create a new file in the `src/pages` folder e.g. `Contact.tsx`. The `.tsx` file extension is important here.
 
