@@ -7,6 +7,8 @@ interface NavBarProps {
   sticky?: boolean;
 }
 
+const navBarStyle = `hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100`;
+
 const NavBar: FC<NavBarProps> = ({ sticky }) => {
   return (
     <nav className={`bg-brand-yellow uppercase font-medium text-md flex px-8 ${sticky ? "sticky top-0 z-10" : null}`}>
@@ -22,13 +24,13 @@ const NavBar: FC<NavBarProps> = ({ sticky }) => {
 
       <ul className='flex place-items-center mx-8 flex-grow'>
         <li className='px-6 py-6'>
-          <Link to="/" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Shop</Link>
+          <Link to="/" className={navBarStyle}>Shop</Link>
         </li>
         <li className='px-6 py-6'>
-          <Link to="/sets" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Discover</Link>
+          <Link to="/sets" className={navBarStyle}>Discover</Link>
         </li>
         <li className='px-6 py-6'>
-          <Link to="/contact" className='hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100'>Help</Link>
+          <Link to="/contact" className={navBarStyle}>Help</Link>
         </li>
       </ul>
 
