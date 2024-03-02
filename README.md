@@ -40,6 +40,37 @@ Inside the `src` folder, you will find the following items:
 
 - `types.ts`: This file contains the types used in the project. This is used to define the structure of the data used in the project. See the [TypeScript documentation](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html) for more information.
 
+## Getting Started
+
+In the [Components](docs/Components.md) page, you can see a list of prebuilt items you can use to quickly build your site as well as how to add them. You can start by adding them in the provided `src/pages/Home.tsx` file.
+
+For components used across all pages like `NavBar` and `Footer` consider adding them in the `src/App.tsx` file which allows them to be re-used. You may need a different import URL though if you do this.
+
+In paths note the following:
+
+- `.` Current directory
+- `..` Parent directory
+- `../..` Up 2 directories
+- `src/File.tsx` Path to a file from the position of the file its included in. For example this will point to a different location if its in the top-level folder rather than the `src/pages` folder.
+
+### Adding Pages
+
+- To add a page create a new file in the `src/pages` folder e.g. `Contact.tsx`. The `.tsx` file extension is important here.
+
+- Then inside `src/App.tsx` add the import to your new file at the top of the file e.g.
+  `import Contact from './pages/Contact';`
+
+- Finally, inside the `<Routes>` component create the component itself and a URL mapping using this example.
+  `<Route path="/contact" element={<Contact />} />`
+
+- You can change the URL by adjusting the `path` property and the page that will be rendered by alterting the `element` one.
+
+### Creating Custom Components
+
+You can create custom components from scratch if you're feeling confident or edit an existing one to get started. Try creating a new Hero element by copying and pasting the `src/components/IconsBirdHero.tsx` into the same folder, renaming it to something else. You can then edit this file, changing the text and images to match what you'd like. You could replace `src={iconsBirdHeroJPG}` with an image from the web by using a string e.g. `src="https://lego.com/example/image.png"`
+
+As you get more confident, you'll be able to customise and build more complex components. In this demo we've add some basic interactivity, have a look at `PromoBar.tsx` which adds buttons to be able to click through content.
+
 ## Tools
 
 To help you get going quickly we've added some other tools to the project, you don't need to worry about these too much at the moment, but they are there to help you as you progress through the project. You're welcome to explore them if you're interested.
