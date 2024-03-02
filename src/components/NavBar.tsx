@@ -10,13 +10,15 @@ interface NavBarProps {
 const NavBar: FC<NavBarProps> = ({ sticky }) => {
   return (
     <nav className={`bg-brand-yellow uppercase font-medium text-md flex px-8 ${sticky ? "sticky top-0 z-10" : null}`}>
-      <img
-        src={legoSVG}
-        alt="LEGO"
-        className='w-14 h-14 object-contain my-2'
-        loading="eager"
-        decoding="async"
-      />
+      <Link to="/">
+        <img
+          src={legoSVG}
+          alt="LEGO"
+          className='w-14 h-14 object-contain my-2'
+          loading="eager"
+          decoding="async"
+        />
+      </Link>
 
       <ul className='flex place-items-center mx-8 flex-grow'>
         <li className='px-6 py-6'>
