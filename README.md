@@ -83,6 +83,12 @@ export default Contact;
 
 - You can change the URL by adjusting the `path` property and the page that will be rendered by alterting the `element` one.
 
+### Navigation
+
+When adding new screens, you may want to use the `NavBar` to be able to open them. Once the route has been added in `src/App.tsx` you're ready to go and can access the page by adding the `path` you've chosen into the URL bar.
+
+To add the route in the NavBar, open the `src/components/NavBar.tsx` file and edit the `<Link>` components to match. The `to` property is the URL you'd like to navigate to and the text inbetween the two tags is the part that will be displayed.
+
 ### Creating Custom Components
 
 You can create custom components from scratch if you're feeling confident or edit an existing one to get started. Try creating a new Hero element by copying and pasting the `src/components/IconsBirdHero.tsx` into the same folder, renaming it to something else. You can then edit this file, changing the text and images to match what you'd like. You could replace `src={iconsBirdHeroJPG}` with an image from the web by using a string e.g. `src="https://lego.com/example/image.png"`
