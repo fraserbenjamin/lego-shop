@@ -42,7 +42,7 @@ Inside the `src` folder, you will find the following items:
 
 ## Getting Started
 
-In the [Components](docs/Components.md) page, you can see a list of prebuilt items you can use to quickly build your site as well as how to add them. You can start by adding them in the provided `src/pages/Home.tsx` file.
+In the [Components](docs/Components.md) page, you can see a list of prebuilt items you can use to quickly build your site as well as how to add them. You can start by adding them in the provided `src/pages/Home.tsx` file. You can remove the <Placeholder /> component first, which will give you a blank page to get going.
 
 For components used across all pages like `NavBar` and `Footer` consider adding them in the `src/App.tsx` file which allows them to be re-used. You may need a different import URL though if you do this.
 
