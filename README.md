@@ -57,6 +57,24 @@ In paths note the following:
 
 - To add a page create a new file in the `src/pages` folder e.g. `Contact.tsx`. The `.tsx` file extension is important here.
 
+- Add the basic component structure, as well as any additional components inside of it, like you've done previously.
+
+#### src/pages/Contact.tsx
+
+```
+import HelpBanner from "../components/HelpBanner";
+
+const Contact = () => {
+  return (
+    <>
+      <HelpBanner />
+    </>
+  );
+};
+
+export default Contact;
+```
+
 - Then inside `src/App.tsx` add the import to your new file at the top of the file e.g.
   `import Contact from './pages/Contact';`
 
