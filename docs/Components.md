@@ -34,6 +34,12 @@ Then inside the `return` function include the component e.g. `<PromoBar />`. Mak
 
 ![Eiffel Tower Hero](./assets/EiffelTowerHero.png)
 
+## Featured Sets
+
+`<FeaturedSets />`
+
+![Featured Sets](./assets/FeaturedSets.png)
+
 ## Footer
 
 `<Footer />`
