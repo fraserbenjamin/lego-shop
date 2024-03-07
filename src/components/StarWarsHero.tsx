@@ -14,7 +14,7 @@ const StarWarsHero = () => (
     </div>
 
     <img src={starWarsHeroJPG} alt="Star Wars" className="h-full w-full object-cover" />
-  </div >
+  </div>
 );
 
 export default StarWarsHero;
