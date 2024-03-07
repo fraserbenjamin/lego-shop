@@ -1,7 +1,7 @@
 
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import Footer from './Footer';
+import Footer from '../src/components/Footer';
 
 test('renders Footer component', () => {
   render(<Footer />);

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import ProductCard from './ProductCard';
+import ProductCard from '../src/components/ProductCard';
 
 test('renders ProductCard component', () => {
   const mockProduct = {

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import IconsBirdHero from './IconsBirdHero';
+import IconsBirdHero from '../src/components/IconsBirdHero';
 
 test('renders IconsBirdHero component', () => {
   render(<IconsBirdHero />);

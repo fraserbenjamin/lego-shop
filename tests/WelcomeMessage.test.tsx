@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import WelcomeMessage from './WelcomeMessage';
+import WelcomeMessage from '../src/components/WelcomeMessage';
 
 test('renders WelcomeMessage component', () => {
   render(<WelcomeMessage />);

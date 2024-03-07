@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import PromoButton from './PromoButton';
+import PromoButton from '../src/components/PromoButton';
 
 test('renders PromoButton component with default props', () => {
   render(<PromoButton label="Click me" />);

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import StarWarsHero from './StarWarsHero';
+import StarWarsHero from '../src/components/StarWarsHero';
 
 test('renders StarWarsHero component', () => {
   render(<StarWarsHero />);

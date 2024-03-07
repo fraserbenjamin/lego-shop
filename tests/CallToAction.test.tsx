@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import CallToAction from './CallToAction';
+import CallToAction from '../src/components/CallToAction';
 
 test('renders CallToAction component', () => {
   render(<CallToAction />);

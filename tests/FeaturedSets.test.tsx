@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import FeaturedSets from './FeaturedSets';
+import FeaturedSets from '../src/components/FeaturedSets';
 
 test('renders FeaturedSets component', () => {
   // Render the component

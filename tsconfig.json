@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": [ "src", "vitest.setup.ts" ],
+  "include": [ "src", "vitest.setup.ts", "tests/CallToAction.test.tsx", "tests/DataSafety.test.tsx", "tests/DuneHero.test.tsx", "tests/EiffelTowerHero.test.tsx", "tests/FeaturedSets.test.tsx", "tests/Footer.test.tsx", "tests/GiftWithPurchase.test.tsx", "tests/HelpBanner.test.tsx", "tests/IconsBirdHero.test.tsx", "tests/Placeholder.test.tsx", "tests/ProductCard.test.tsx", "tests/PromoButton.test.tsx", "tests/ReadAllAboutIt.test.tsx", "tests/Sets.test.tsx", "tests/StarWarsHero.test.tsx", "tests/TelephoneBoxHero.test.tsx", "tests/TopPicks.test.tsx", "tests/WelcomeMessage.test.tsx" ],
   "references": [ { "path": "./tsconfig.node.json" } ]
 }

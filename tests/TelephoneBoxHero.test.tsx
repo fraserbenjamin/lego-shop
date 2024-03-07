@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import TelephoneBoxHero from './TelephoneBoxHero';
+import TelephoneBoxHero from '../src/components/TelephoneBoxHero';
 
 test('renders TelephoneBoxHero component', () => {
   render(<TelephoneBoxHero />);

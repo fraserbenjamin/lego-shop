@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import GiftWithPurchase from './GiftWithPurchase';
+import GiftWithPurchase from '../src/components/GiftWithPurchase';
 
 test('renders GiftWithPurchase component', () => {
   render(<GiftWithPurchase />);

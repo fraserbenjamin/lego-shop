@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import TopPicks from './TopPicks';
+import TopPicks from '../src/components/TopPicks';
 
 test('renders TopPicks component', () => {
   render(<TopPicks />);

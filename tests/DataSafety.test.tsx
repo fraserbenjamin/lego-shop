@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import DataSafety from './DataSafety';
+import DataSafety from '../src/components/DataSafety';
 import { test, expect } from 'vitest';
 
 test('renders DataSafety component', () => {

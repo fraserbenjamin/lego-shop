@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import ReadAllAboutIt from './ReadAllAboutIt';
+import ReadAllAboutIt from '../src/components/ReadAllAboutIt';
 
 test('renders ReadAllAboutIt component', () => {
   render(<ReadAllAboutIt />);

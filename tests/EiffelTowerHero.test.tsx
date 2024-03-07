@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import EiffelTowerHero from './EiffelTowerHero';
+import EiffelTowerHero from '../src/components/EiffelTowerHero';
 
 test('renders EiffelTowerHero component', () => {
   render(<EiffelTowerHero />);

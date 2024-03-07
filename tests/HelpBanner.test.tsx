@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import HelpBanner from './HelpBanner';
+import HelpBanner from '../src/components/HelpBanner';
 
 test('renders HelpBanner component', () => {
   render(<HelpBanner />);

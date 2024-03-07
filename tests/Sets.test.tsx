@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { test, expect } from 'vitest';
-import Sets from './Sets';
+import Sets from '../src/components/Sets';
 
 test('renders Sets component', () => {
   render(<Sets />);
