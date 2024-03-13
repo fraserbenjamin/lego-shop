@@ -17,7 +17,7 @@ Through this tutorial you will
 
 To help get started quickly, we recommend using [StackBlitz](https://stackblitz.com), an online code editor that allows you to start developing right away. You can find the project [here](https://stackblitz.com/~/github.com/fraserbenjamin/lego-shop). It provides a solid text editor without having to install anything on your computer. Just click the link and you can start building right away!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/~/github.com/fraserbenjamin/lego-shop)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/fraserbenjamin/lego-shop)
 
 If you would like to run the project on your computer, you can clone the project from GitHub and run it locally. To do this, you will need to have Node.js installed on your computer. You can find the project [here](https://nodejs.org/en/). Once you have Node.js installed, you can clone the project from GitHub and run the following commands in the terminal `npm install` and `npm run dev`.
 
