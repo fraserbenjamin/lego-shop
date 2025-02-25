@@ -14,7 +14,7 @@ test('renders PromoButton component with default props', () => {
   expect(labelElement).toBeInTheDocument();
 
   // Assert that the button has the correct classes
-  expect(buttonElement).toHaveClass('font-bold', 'rounded', 'flex', 'py-3', 'px-5', 'space-x-3', 'place-items-center', 'bg-white', 'text-neutral-900');
+  expect(buttonElement).toHaveClass('font-bold', 'rounded-sm', 'flex', 'py-3', 'px-5', 'space-x-3', 'place-items-center', 'bg-white', 'text-neutral-900');
 });
 
 test('renders PromoButton component with night mode', () => {
@@ -22,5 +22,5 @@ test('renders PromoButton component with night mode', () => {
 
   // Assert that the button has the correct classes for night mode
   const buttonElement = screen.getByRole('button', { name: /Click me/i });
-  expect(buttonElement).toHaveClass('font-bold', 'rounded', 'flex', 'py-3', 'px-5', 'space-x-3', 'place-items-center', 'bg-neutral-900', 'text-white');
+  expect(buttonElement).toHaveClass('font-bold', 'rounded-sm', 'flex', 'py-3', 'px-5', 'space-x-3', 'place-items-center', 'bg-neutral-900', 'text-white');
 });
