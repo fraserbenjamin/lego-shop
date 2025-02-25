@@ -118,7 +118,7 @@ const PromoBar = () => {
 
   return (
     <div className='bg-theme-light flex font-regular text-sm place-items-center py-3 justify-between px-8 bg-brand-light'>
-      <Link to="https://kids.lego.com" className='flex uppercase bg-brand-blue-light font-medium px-3 py-1 rounded shadow text-xs text-neutral-800 space-x-3 place-items-center'>
+      <Link to="https://kids.lego.com" className='flex uppercase bg-brand-blue-light font-medium px-3 py-1 rounded-sm shadow-sm text-xs text-neutral-800 space-x-3 place-items-center'>
         <svg className='rotate-180 h-2' viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" data-di-rand="1707084176074"><path fill="currentColor" d="M29.493.597l.095.084 6.535 6.54a1 1 0 01.083 1.319l-.083.094-6.535 6.54a1 1 0 01-1.498-1.32l.083-.094 4.83-4.834-31.908.001A1 1 0 01.98 6.934l.116-.007h31.907l-4.83-4.833a1 1 0 01-.082-1.32l.083-.094a1 1 0 011.32-.083z"></path></svg>
         <p className='shrink-0'>Play Zone</p>
       </Link>

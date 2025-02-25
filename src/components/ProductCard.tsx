@@ -23,7 +23,7 @@ const ProductCard: FC<ProductCardProps> = ({
 
         <div className="absolute bottom-2 left-2">
           {tag ? (
-            <div className="bg-brand-yellow text-xs py-1 px-2 flex-shrink">
+            <div className="bg-brand-yellow text-xs py-1 px-2 shrink">
               {tag === "exclusive" ? "Exclusives" : null}
               {tag === "new" ? "New" : null}
             </div>
@@ -31,7 +31,7 @@ const ProductCard: FC<ProductCardProps> = ({
         </div>
       </div>
 
-      <h1 className="font-medium h-14 flex-grow">{name}</h1>
+      <h1 className="font-medium h-14 grow">{name}</h1>
 
       {rating ? <div className="flex my-1">
         {Array.from(Array(rating).keys()).map((key: number) => (
@@ -50,7 +50,7 @@ const ProductCard: FC<ProductCardProps> = ({
       </div> : null}
 
       <p className="text-lg font-bold">£{price}</p>
-      <button className="bg-brand-orange rounded px-12 py-3 font-medium w-full mt-2">
+      <button className="bg-brand-orange rounded-sm px-12 py-3 font-medium w-full mt-2">
         Add to Bag
       </button>
     </div >

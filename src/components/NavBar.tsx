@@ -22,7 +22,7 @@ const NavBar: FC<NavBarProps> = ({ sticky }) => {
         />
       </Link>
 
-      <ul className='flex place-items-center mx-8 flex-grow'>
+      <ul className='flex place-items-center mx-8 grow'>
         <li className='px-6 py-6'>
           <Link to="/" className={navBarStyle}>Shop</Link>
         </li>
