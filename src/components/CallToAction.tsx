@@ -50,7 +50,7 @@ const Card: FC<CardProps> = ({ title, description, image, action }) => (
   </div>
 );
 
-const CallToAction = () => (
+export const CallToAction = () => (
   <div className='px-8 py-5 bg-brand-light'>
     <div className="grid grid-cols-1 md:grid-cols-3">
       {items.map((item) => (
@@ -59,5 +59,3 @@ const CallToAction = () => (
     </div>
   </div>
 );
-
-export default CallToAction;

@@ -1,9 +1,9 @@
-import Placeholder from "../components/Placeholder";
+import * as LEGO from "../components";
 
 const Home = () => {
   return (
     <>
-      <Placeholder />
+      <LEGO.Placeholder />
     </>
   );
 };

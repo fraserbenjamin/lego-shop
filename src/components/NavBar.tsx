@@ -9,7 +9,7 @@ interface NavBarProps {
 
 const navBarStyle = `hover:border-neutral-800 pb-1 border-b-[3px] border-transparent transition-colors duration-100`;
 
-const NavBar: FC<NavBarProps> = ({ sticky }) => {
+export const NavBar: FC<NavBarProps> = ({ sticky }) => {
   return (
     <nav className={`bg-brand-yellow uppercase font-medium text-md flex px-8 ${sticky ? "sticky top-0 z-10" : null}`}>
       <Link to="/">
@@ -53,5 +53,3 @@ const NavBar: FC<NavBarProps> = ({ sticky }) => {
     </nav>
   );
 };
-
-export default NavBar;

@@ -1,6 +1,6 @@
 
 
-const Placeholder = () => (
+export const Placeholder = () => (
   <div className="w-screen h-screen p-24 bg-neutral-100 relative flex flex-col justify-center">
     <div className="border-2 border-neutral-200 w-full h-full flex justify-center place-items-center">
       <div className="flex flex-col text-center space-y-5 px-5">
@@ -10,5 +10,3 @@ const Placeholder = () => (
     </div>
   </div>
 );
-
-export default Placeholder;

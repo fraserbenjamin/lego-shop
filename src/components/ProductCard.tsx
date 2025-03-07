@@ -9,7 +9,7 @@ interface ProductCardProps {
   tag?: Tag;
 }
 
-const ProductCard: FC<ProductCardProps> = ({
+export const ProductCard: FC<ProductCardProps> = ({
   name,
   price,
   rating,
@@ -56,5 +56,3 @@ const ProductCard: FC<ProductCardProps> = ({
     </div >
   );
 };
-
-export default ProductCard;

@@ -1,5 +1,5 @@
 import { Set } from "../types";
-import ProductCard from "./ProductCard";
+import { ProductCard } from "./ProductCard";
 
 const featuredSets: Set[] = [
   {
@@ -49,7 +49,7 @@ const featuredSets: Set[] = [
   },
 ];
 
-const FeaturedSets = () => {
+export const FeaturedSets = () => {
   return (
     <div className="px-16 my-8">
       <h1 className="text-2xl py-3">Featured Sets</h1>
@@ -69,5 +69,3 @@ const FeaturedSets = () => {
     </div>
   );
 };
-
-export default FeaturedSets;

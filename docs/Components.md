@@ -4,69 +4,69 @@ This page contains a list of all the components you may want to use when buildin
 
 # Usage
 
-To add a component, add the import at the top with its path e.g. `import PromoBar from "../components/PromoBar";` at the top of the file.
+To add a component, add the import at the top with its path e.g. `import * as LEGO from "../components";` at the top of the file.
 
-Then inside the `return` function include the component e.g. `<PromoBar />`. Make sure to include the `/` at the end. Some components like the `ProductCard` require additional properties. See the examples below for how to add them.
+Then inside the `return` function include the component e.g. `<LEGO.PromoBar />`. Make sure to include the `/` at the end. Some components like the `ProductCard` require additional properties. See the examples below for how to add them.
 
 # Gallery
 
 ## Call To Action
 
-`<CallToAction />`
+`<LEGO.CallToAction />`
 
 ![Call To Action](./assets/CallToAction.png)
 
 ## Data Safety
 
-`<DataSafety />`
+`<LEGO.DataSafety />`
 
 ![Data Safety](./assets/DataSafety.png)
 
 ## Dune Hero
 
-`<DuneHero />`
+`<LEGO.DuneHero />`
 
 ![Dune Hero](./assets/DuneHero.png)
 
 ## Eiffel Tower Hero
 
-`<EiffelTowerHero />`
+`<LEGO.EiffelTowerHero />`
 
 ![Eiffel Tower Hero](./assets/EiffelTowerHero.png)
 
 ## Featured Sets
 
-`<FeaturedSets />`
+`<LEGO.FeaturedSets />`
 
 ![Featured Sets](./assets/FeaturedSets.png)
 
 ## Footer
 
-`<Footer />`
+`<LEGO.Footer />`
 
 ![Footer](./assets/Footer.png)
 
 ## Gift With Purchase
 
-`<GiftWithPurchase />`
+`<LEGO.GiftWithPurchase />`
 
 ![Gift With Purchase](./assets/GiftWithPurchase.png)
 
 ## Help Banner
 
-`<HelpBanner />`
+`<LEGO.HelpBanner />`
 
 ![Help Banner](./assets/HelpBanner.png)
 
 ## Icons Bird Hero
 
-`<IconsBirdHero />`
+`<LEGO.IconsBirdHero />`
 
 ![Icons Bird Hero](./assets/IconsBirdHero.png)
 
 ## Nav Bar
 
-`<NavBar />`
+`<LEGO.NavBar />`
 
 ![Nav Bar](./assets/NavBar.png)
 
@@ -75,7 +75,7 @@ Then inside the `return` function include the component e.g. `<PromoBar />`. Mak
 The product card has a number of required properties, including the name, price and an image. You can also provide optional properties such as a tag and rating. Note the diffent use of `{}` and `""`. As `price` and `rating` are numbers you should use parentheses/braces. For text you can just use quotes. Some fields only accept certain types, for example `tag` can only be `new` or `exclusive`.
 
 ```
-<ProductCard
+<LEGO.ProductCard
   name="Lion Knights' Castle"
   price={344.99}
   rating={5}
@@ -88,42 +88,42 @@ The product card has a number of required properties, including the name, price 
 
 ## Promo Bar
 
-`<PromoBar />`
+`<LEGO.PromoBar />`
 
 ![Promo Bar](./assets/PromoBar.png)
 
 ## Read All About It
 
-`<ReadAllAboutIt />`
+`<LEGO.ReadAllAboutIt />`
 
 ![Read All About It](./assets/ReadAllAboutIt.png)
 
 ## Star Wars Hero
 
-`<StarWarsHero />`
+`<LEGO.StarWarsHero />`
 
 ![Star Wars Hero](./assets/StarWarsHero.png)
 
 ## Support Topics
 
-`<SupportTopics />`
+`<LEGO.SupportTopics />`
 
 ![Support Topics](./assets/SupportTopics.png)
 
 ## Telephone Box Hero
 
-`<TelephoneBoxHero />`
+`<LEGO.TelephoneBoxHero />`
 
 ![Telephone Box Hero](./assets/TelephoneBoxHero.png)
 
 ## Top Picks
 
-`<TopPicks />`
+`<LEGO.TopPicks />`
 
 ![Top Picks](./assets/TopPicks.png)
 
 ## Welcome Message
 
-`<WelcomeMessage />`
+`<LEGO.WelcomeMessage />`
 
 ![Welcome Message](./assets/WelcomeMessage.png)

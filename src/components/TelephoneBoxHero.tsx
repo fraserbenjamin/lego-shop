@@ -1,8 +1,7 @@
 import telephoneBoxMotionHero from "../assets/telephone-box-motion-hero.mp4";
-import PromoButton from "./PromoButton";
+import { PromoButton } from "./PromoButton";
 
-const TelephoneBoxHero = () => {
-
+export const TelephoneBoxHero = () => {
   return (
     <div className="w-full relative flex place-items-center bg-neutral-900 h-96 max-h-96 sm:h-auto overflow-hidden">
       <div className="flex flex-col text-white absolute z-10 place-items-start space-y-5 max-w-lg mx-24">
@@ -21,5 +20,3 @@ const TelephoneBoxHero = () => {
     </div >
   )
 }
-
-export default TelephoneBoxHero;

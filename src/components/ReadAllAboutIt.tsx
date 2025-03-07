@@ -49,7 +49,7 @@ const Card: FC<CardProps> = ({ title, description, image }) => (
   </div>
 );
 
-const ReadAllAboutIt = () => (
+export const ReadAllAboutIt = () => (
   <div className='mx-8 my-5'>
     <h1 className='text-3xl mt-8 mb-3 mx-3'>This week's top picks</h1>
 
@@ -60,5 +60,3 @@ const ReadAllAboutIt = () => (
     </div>
   </div>
 );
-
-export default ReadAllAboutIt;

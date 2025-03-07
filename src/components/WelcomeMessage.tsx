@@ -1,6 +1,4 @@
-
-
-const WelcomeMessage = () => (
+export const WelcomeMessage = () => (
   <div className='bg-brand-light px-5 py-8 my-12 mx-12'>
     <p>
       Welcome to the Official LEGO® Shop, the awesome home of LEGO building toys, stunning display sets and much more for kids and adults alike! Find the&nbsp;
@@ -16,5 +14,3 @@ const WelcomeMessage = () => (
     </p>
   </div>
 );
-
-export default WelcomeMessage;

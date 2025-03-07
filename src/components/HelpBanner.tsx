@@ -23,7 +23,7 @@ const supportLinks = [
   },
 ];
 
-const HelpBanner = () => (
+export const HelpBanner = () => (
   <div className='bg-brand-yellow flex flex-col lg:flex-row'>
     <img src={sophiaPNG} alt="Sophia" className='h-48 object-contain lg:h-96 mb-8' />
 
@@ -43,5 +43,3 @@ const HelpBanner = () => (
     </div>
   </div>
 );
-
-export default HelpBanner;

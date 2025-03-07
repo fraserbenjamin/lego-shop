@@ -2,7 +2,7 @@ import legoSVG from "../assets/lego.svg";
 
 const linkRowStyles = `text-sm cursor-pointer hover:underline p-3`;
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="bg-brand-purple text-white w-full px-12 flex flex-col py-8">
 
@@ -62,5 +62,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

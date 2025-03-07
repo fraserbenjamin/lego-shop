@@ -1,7 +1,7 @@
 import bowserPNG from '../assets/bowser.png';
 import dunferMifflinPNG from '../assets/dunderMifflin.png';
 
-const TopPicks = () => (
+export const TopPicks = () => (
   <div className='mx-8'>
     <h1 className='text-3xl mt-8 mb-3 mx-3'>This week's top picks</h1>
 
@@ -36,5 +36,3 @@ const TopPicks = () => (
     </div>
   </div>
 );
-
-export default TopPicks;

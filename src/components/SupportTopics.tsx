@@ -39,7 +39,7 @@ const topics = [
   }
 ];
 
-const SupportTopics = () => {
+export const SupportTopics = () => {
   return (
     <section>
       <ul className="grid grid-cols-1 md:grid-cols-3 m-8">
@@ -53,5 +53,3 @@ const SupportTopics = () => {
     </section>
   );
 };
-
-export default SupportTopics;

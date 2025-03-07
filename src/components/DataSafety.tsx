@@ -1,4 +1,4 @@
-const DataSafety = () => (
+export const DataSafety = () => (
   <div className="text-center flex flex-col place-items-center">
     <h1 className="font-bold text-2xl my-8">How we keep your data safe</h1>
     <p className="text-lg max-w-5xl">We're committed to treating your personal info with care, trust and respect. We've created our privacy policy to provide transparency into our practices and policies.</p>
@@ -9,5 +9,3 @@ const DataSafety = () => (
     </button>
   </div>
 );
-
-export default DataSafety;

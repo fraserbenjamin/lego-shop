@@ -1,7 +1,7 @@
 import gwpJPG from '../assets/gwp.jpg';
-import PromoButton from './PromoButton';
+import { PromoButton } from './PromoButton';
 
-const GiftWithPurchase = () => (
+export const GiftWithPurchase = () => (
   <div className='relative bg-black'>
     <img src={gwpJPG} alt="Gift with purchase" className="h-44 object-cover" />
 
@@ -12,5 +12,3 @@ const GiftWithPurchase = () => (
     </div>
   </div>
 );
-
-export default GiftWithPurchase;

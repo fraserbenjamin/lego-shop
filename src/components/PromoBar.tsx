@@ -90,7 +90,7 @@ const messages = [
 ]
 
 
-const PromoBar = () => {
+export const PromoBar = () => {
   const [persistedCurrentMessageIndex, setPersistedCurrentMessageIndex] = useLocalStorage('currentMessageIndex', 0);
   // Using useState rather than useLocalStorageDirectly to better handle updating the value
   const [currentMessageIndex, setCurrentMessageIndex] = useState<number>(persistedCurrentMessageIndex || 0);
@@ -147,5 +147,3 @@ const PromoBar = () => {
     </div>
   );
 };
-
-export default PromoBar;

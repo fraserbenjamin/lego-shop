@@ -5,7 +5,7 @@ import bagSVG from "../assets/bag.svg";
 
 console.log(`Found ${(setsList as SetResponse[]).length} sets`);
 
-const Sets = () => {
+export const Sets = () => {
   const [visible, setVisible] = useState(12);
 
   const loadMore = () => {
@@ -53,5 +53,3 @@ const Sets = () => {
     </div>
   );
 }
-
-export default Sets;

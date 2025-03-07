@@ -64,24 +64,23 @@ In paths note the following:
 
 - Start by opening the `src/pages/Home.tsx` file, this includes a basic placeholder component. Remove the `<Placeholder />` first, which will give you a blank page to get going in your preview screen.
 
-- Add an import for a component, this goes at the top of the file and allows you to use the component later on in the file. For this example we're going to use the `TelephoneBoxHero`. At the top of the `Home.tsx` file `import TelephoneBoxHero from "../components/TelephoneBoxHero";`
-
-- In the tags (`<>`) of the same file, include the component e.g. `<TelephoneBoxHero />`
+- In the tags (`<>`) of the same file, include the component e.g. `<LEGO.TelephoneBoxHero />`
 
 - Save the file and your output should now show the element and your code should look like below.
 
 ```
-import TelephoneBoxHero from "../components/TelephoneBoxHero";
+import * as LEGO from "../components";
 
 const Home = () => {
   return (
     <>
-      <TelephoneBoxHero />
+      <LEGO.TelephoneBoxHero />
     </>
   );
 };
 
 export default Home;
+
 ```
 
 ### Expanding the Homepage
@@ -101,12 +100,12 @@ You can add any page you'd like, however for this example we're going to create 
 #### src/pages/Contact.tsx
 
 ```
-import HelpBanner from "../components/HelpBanner";
+import * as Section from "../components";
 
 const Contact = () => {
   return (
     <>
-      <HelpBanner />
+      <Section.HelpBanner />
     </>
   );
 };
